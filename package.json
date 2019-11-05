@@ -8,7 +8,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "prettier": "prettier --write \"**/*.{js,jsx,vue,flow,ts,css,less,scss,html,json,graphql,md,gfm,mdx,yaml,yml}\""
+    "prettier": "prettier --write \"**/*.{js,jsx,vue,flow,ts,css,less,scss,html,json,graphql,md,gfm,mdx,yaml,yml}\"",
+      "tslint": "tslint --project ./tsconfig.json",
+    "tslint-fix": "tslint --fix --project ./tsconfig.json"
   },
   "private": true,
   "dependencies": {
@@ -44,6 +46,8 @@
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
     "typescript": "~3.5.3"
   }
 }
