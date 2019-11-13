@@ -1,1 +1,10 @@
-$nico-green: #005500;
+$colors: (
+  primary: #005500,
+  primary-light: lighten(#005500, 10%),
+  primary-dark: darken(#005500, 10%),
+  testcolor: #749
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
