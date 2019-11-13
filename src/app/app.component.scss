@@ -21,12 +21,14 @@ app-header {
   width: 100vw;
   min-height: 48px;
   height: 10vh;
+  display: flex;
   border: 1px solid color(testcolor);
   background-color: orange;
 }
 
 app-main {
   flex: 1 0 auto;
+  display: flex;
   border: 1px solid yellow;
   background-color: lightgreen;
 }
@@ -35,6 +37,7 @@ app-footer {
   flex-shrink: 0;
   min-height: 96px;
   height: 20vh;
+  display: flex;
   border: 1px solid blue;
   background-color: purple;
 }
