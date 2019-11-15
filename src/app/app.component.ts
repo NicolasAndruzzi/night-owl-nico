@@ -10,32 +10,28 @@ import { takeWhile } from 'rxjs/operators';
 })
 export class AppComponent implements OnDestroy {
   title = 'night-owl-nico';
-  faviconLinkOverrideElelment: any;
-  // Calculate interval based on how many frames there are + how fast we want
-  // moon to rotate
-  // Could it be possible to throttle this interval with a user input on the
-  // site??? (Allowing them to increase/decrease moon rotations.  Achievement?)
-  // Reverse rotations?  Apply other effects?
-  // ===============================
-  numbers: any = interval(1000);
-  // ===============================
-  alive = true;
+  faviconLinkOverrideElelment: any = null;
+  numbers: any = interval(50);
   regularInterval = this.numbers.pipe(takeWhile(() => this.alive));
   currentFrame = 1;
-  totalNumberOfFrames = 5;
+  totalNumberOfFrames = 240;
+  alive = true;
 
   constructor(@Inject(DOCUMENT) private document: Document) {
+    this.faviconLinkOverrideElelment = this.document.querySelector(
+      '#faviconLinkOverrideElelment'
+    );
     this.regularInterval.subscribe(() => this.rotateMoonFavicon());
   }
 
   rotateMoonFavicon(): void {
-    this.faviconLinkOverrideElelment = this.document.querySelector(
-      '#faviconLinkOverrideElelment'
-    );
-    this.faviconLinkOverrideElelment.href = `/assets/favicon-${this.currentFrame}.ico`;
-    this.currentFrame++;
-    if (this.currentFrame > this.totalNumberOfFrames) {
-      this.currentFrame = 1;
+    if (this.faviconLinkOverrideElelment) {
+      // tslint:disable-next-line: max-line-length
+      this.faviconLinkOverrideElelment.href = `/assets/simple-192x192-moon-rotation-frames/simple-192x192-moon-rotation-frame-${this.currentFrame}.png`;
+      this.currentFrame++;
+      if (this.currentFrame > this.totalNumberOfFrames) {
+        this.currentFrame = 1;
+      }
     }
   }
 
