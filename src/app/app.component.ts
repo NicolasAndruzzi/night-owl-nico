@@ -1,5 +1,5 @@
 import { DOCUMENT } from '@angular/common';
-import { Component, Inject, OnDestroy } from '@angular/core';
+import { Component, Inject, OnDestroy, OnInit } from '@angular/core';
 import { interval } from 'rxjs';
 import { takeWhile } from 'rxjs/operators';
 
@@ -8,7 +8,7 @@ import { takeWhile } from 'rxjs/operators';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnDestroy {
+export class AppComponent implements OnInit, OnDestroy {
   title = 'night-owl-nico';
   faviconLinkOverrideElelment: any = null;
   numbers: any = interval(500);
@@ -21,18 +21,22 @@ export class AppComponent implements OnDestroy {
     this.faviconLinkOverrideElelment = this.document.querySelector(
       '#faviconLinkOverrideElelment'
     );
-    this.regularInterval.subscribe(() => this.rotateMoonFavicon());
+  }
+
+  ngOnInit() {
+    if (this.faviconLinkOverrideElelment) {
+      this.regularInterval.subscribe(() => this.rotateMoonFavicon());
+    }
   }
 
   rotateMoonFavicon(): void {
-    if (this.faviconLinkOverrideElelment) {
-      // tslint:disable-next-line: max-line-length
-      this.faviconLinkOverrideElelment.href = `/assets/simple-192x192-moon-rotation-frames/simple-192x192-moon-rotation-frame-${this.currentFrame}.png`;
-      this.currentFrame++;
-      if (this.currentFrame > this.totalNumberOfFrames) {
-        this.currentFrame = 1;
-      }
-    }
+    // console.time();
+    // tslint:disable-next-line: max-line-length
+    this.faviconLinkOverrideElelment.href = `/assets/simple-192x192-moon-rotation-frames/simple-192x192-moon-rotation-frame-${this.currentFrame}.png`;
+    this.currentFrame++;
+    this.currentFrame =
+      this.currentFrame > this.totalNumberOfFrames ? 1 : this.currentFrame;
+    // console.timeEnd();
   }
 
   ngOnDestroy() {
