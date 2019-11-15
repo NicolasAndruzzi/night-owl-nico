@@ -11,7 +11,7 @@ import { takeWhile } from 'rxjs/operators';
 export class AppComponent implements OnDestroy {
   title = 'night-owl-nico';
   faviconLinkOverrideElelment: any = null;
-  numbers: any = interval(50);
+  numbers: any = interval(500);
   regularInterval = this.numbers.pipe(takeWhile(() => this.alive));
   currentFrame = 1;
   totalNumberOfFrames = 240;
