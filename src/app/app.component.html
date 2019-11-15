@@ -1,4 +1,18 @@
-<app-header></app-header>
+<!-- ============Hidden Video For Favicon============ -->
+<video
+  [hidden]="true"
+  #faviconVideoElementNode
+  width="300"
+  autoplay="true"
+  loop="true"
+  muted="true"
+>
+  <source src="assets/moon-rotating.mp4" type="video/mp4;" />
+  <source src="assets/moon-rotating.webm" type="video/webm;" />
+</video>
+<!-- ============Hidden Video For Favicon============ -->
+
+<app-header *ngIf="false"></app-header>
 
 <app-main></app-main>
 
