@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import Favico from 'favico.js';
 
 @Component({
   selector: 'app-root',
@@ -10,8 +11,7 @@ export class AppComponent implements AfterViewInit {
   @ViewChild('faviconVideoElementNode', { static: false })
   faviconVideoElementNode: ElementRef;
   // =============================================================
-  Favico = require('favico.js');
-  favicon = new this.Favico();
+  favicon = new Favico();
 
   ngAfterViewInit() {
     if (this.faviconVideoElementNode) {
