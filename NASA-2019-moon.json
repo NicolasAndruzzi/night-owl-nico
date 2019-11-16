@@ -1,5 +1,4 @@
-[
-  {"time":"01 Jan 2019 00:00 UT", "phase":23.62, "age":24.694, "diameter":1851.8, "distance":387048, "j2000":{"ra":14.7499, "dec":-10.6276}, "subsolar":{"lon":-115.527, "lat":0.419}, "subearth":{"lon":6.497, "lat":-6.560}, "posangle":17.052},
+[ {"time":"01 Jan 2019 00:00 UT", "phase":23.62, "age":24.694, "diameter":1851.8, "distance":387048, "j2000":{"ra":14.7499, "dec":-10.6276}, "subsolar":{"lon":-115.527, "lat":0.419}, "subearth":{"lon":6.497, "lat":-6.560}, "posangle":17.052},
   {"time":"01 Jan 2019 01:00 UT", "phase":23.25, "age":24.736, "diameter":1851.0, "distance":387215, "j2000":{"ra":14.7846, "dec":-10.8017}, "subsolar":{"lon":-116.034, "lat":0.417}, "subearth":{"lon":6.490, "lat":-6.543}, "posangle":16.893},
   {"time":"01 Jan 2019 02:00 UT", "phase":22.89, "age":24.778, "diameter":1850.2, "distance":387382, "j2000":{"ra":14.8192, "dec":-10.9748}, "subsolar":{"lon":-116.541, "lat":0.416}, "subearth":{"lon":6.484, "lat":-6.525}, "posangle":16.733},
   {"time":"01 Jan 2019 03:00 UT", "phase":22.52, "age":24.819, "diameter":1849.4, "distance":387548, "j2000":{"ra":14.8539, "dec":-11.1469}, "subsolar":{"lon":-117.049, "lat":0.415}, "subearth":{"lon":6.477, "lat":-6.507}, "posangle":16.572},
