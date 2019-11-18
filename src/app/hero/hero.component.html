@@ -1,3 +1,27 @@
 <section>
-  <p>hero works!</p>
+  <!-- ============Hidden Video For Favicon============ -->
+  <!-- oncanplay and onloadedmetadata are overrides -->
+  <!-- ADD video poster of blacked out moon (first frame) -->
+  <video
+    #faviconVideoElementNode
+    width="300"
+    preload="auto"
+    oncanplay="this.play()"
+    onloadedmetadata="this.muted = true"
+    autoplay
+    loop
+    muted
+  >
+    <source
+      src="assets/NASA-Lunar-Reconnaissance-Orbiter/lunar-libration.webm"
+      type="video/webm"
+    />
+    <source
+      src="assets/NASA-Lunar-Reconnaissance-Orbiter/lunar-libration.mp4"
+      type="video/mp4"
+    />
+    <!-- image of full moon -->
+    <!-- <img src="" alt=""> -->
+  </video>
+  <!-- ============Hidden Video For Favicon============ -->
 </section>
