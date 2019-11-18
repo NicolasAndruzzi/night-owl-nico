@@ -1,9 +1,15 @@
 <!-- ============Hidden Video For Favicon============ -->
-<!-- Give the video element a poster that will be displayed before the video
-  starts to be played -->
-<!-- Poster OR <img src="/static/video-background.jpg">? OR both??? -->
-<!-- video poster of blacked out moon with fallback image of full moon??? -->
-<video #faviconVideoElementNode width="300" autoplay loop muted>
+<!-- oncanplay and onloadedmetadata are overrides -->
+<!-- ADD video poster of blacked out moon (first frame) -->
+<video
+  #faviconVideoElementNode
+  width="300"
+  oncanplay="this.play()"
+  onloadedmetadata="this.muted = true"
+  autoplay
+  loop
+  muted
+>
   <source
     src="assets/NASA-Lunar-Reconnaissance-Orbiter/lunar-libration.webm"
     type="video/webm"
@@ -12,7 +18,8 @@
     src="assets/NASA-Lunar-Reconnaissance-Orbiter/lunar-libration.mp4"
     type="video/mp4"
   />
-  Sorry, your browser doesn't support embedded videos
+  <!-- image of full moon -->
+  <!-- <img src="" alt=""> -->
 </video>
 <!-- ============Hidden Video For Favicon============ -->
 
