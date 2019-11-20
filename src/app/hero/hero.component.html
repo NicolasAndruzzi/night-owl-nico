@@ -1,7 +1,9 @@
 <section>
   <!-- ============Hidden Video For Favicon============ -->
-  <!-- oncanplay and onloadedmetadata are overrides -->
-  <!-- ADD video poster of blacked out moon (first frame) -->
+  <!-- use @HostListener for oncanplay and onloadedmetadata? -->
+  <!-- Was @HostListener not working with oncanplay and onloadedmetadata
+      because these events don't bubble up to the host element? -->
+  <!-- TODO: Add video poster of blacked out moon (first frame) -->
   <video
     #faviconVideoElementNode
     width="300"
@@ -20,7 +22,7 @@
       src="assets/NASA-Lunar-Reconnaissance-Orbiter/lunar-libration.mp4"
       type="video/mp4"
     />
-    <!-- image of full moon -->
+    <!-- TODO: Add image of full moon as fallback for video -->
     <!-- <img src="" alt=""> -->
   </video>
   <!-- ============Hidden Video For Favicon============ -->
