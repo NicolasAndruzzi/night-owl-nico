@@ -3,6 +3,12 @@ main {
   display: flex;
   flex-direction: column;
 
+  .hero-section {
+    height: 125vh;
+    display: flex;
+    // border: 1px dotted blue;
+  }
+
   .main-section {
     height: 100vh;
     display: flex;
