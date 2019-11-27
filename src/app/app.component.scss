@@ -5,28 +5,30 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: color(primary);
-  border: 1px solid red;
+  // background-color: color(primary);
+  // border: 1px solid red;
 }
 
 app-header {
+  // ON PAGE LOAD:
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   width: 100vw;
-  min-height: 48px;
   height: 100vh;
   display: flex;
-  border: 1px solid color(testcolor);
+  // border: 1px solid color(testcolor);
   // background-color: orange;
+  // AFTER SCROLLING:
+  // min-height: 48px;
 }
 
 app-main {
   flex: 1 0 auto;
   display: flex;
-  border: 1px solid yellow;
-  background-color: lightgreen;
+  // border: 1px solid yellow;
+  // background-color: lightgreen;
 }
 
 app-footer {
