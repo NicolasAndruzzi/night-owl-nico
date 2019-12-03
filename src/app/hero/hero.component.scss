@@ -1,4 +1,4 @@
-.nightSky {
+.night-sky {
   flex-shrink: 0;
   display: inline-flex;
   background-color: black;
@@ -10,12 +10,13 @@
 }
 
 .cinemagraph {
-  flex: 1 0 auto;
+  flex-shrink: 0;
   display: inline-flex;
   align-items: flex-start;
   background-color: white;
   overflow: hidden;
   box-shadow: 0 0 15vh 7.5vh black;
+  height: 100vh;
 
   video {
     object-fit: cover;

@@ -2,3 +2,12 @@
 
 // TO ONLY IMPORT BOOTSTRAP'S REBOOT
 @import '~bootstrap/scss/bootstrap-reboot';
+
+// Using CDN for google fonts for now
+// TODO:  Remove unused fonts to improve load time
+// TODO:  Save fonts and serve them myself
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i|Permanent+Marker&display=swap');
+* {
+  font-family: 'Amatic SC', cursive;
+  font-weight: 100;
+}

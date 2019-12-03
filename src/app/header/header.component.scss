@@ -4,24 +4,40 @@ header {
   flex: 1 0 auto;
   display: flex;
   align-items: center;
-  // border: 1px solid red;
+  justify-content: center;
+  border: 1px solid red;
   // background-color: blue;
 
-  div {
+  .logo-container {
     flex: 1 0 auto;
     display: flex;
+    flex-wrap: wrap;
     color: white;
     align-items: center;
-    justify-content: center;
-    span {
-      margin: 0.5rem;
+    justify-content: space-evenly;
+    border: 1px dotted yellow;
+
+    .name {
+      flex-shrink: 0;
+      display: inline-flex;
+      align-items: center;
+      border: 1px dotted white;
+
+      span {
+        text-align: center;
+        font-size: 13vw;
+        width: 5.5vw;
+        border: 1px dotted purple;
+      }
     }
+
     video {
+      flex-shrink: 0;
       border-radius: 50%;
       object-fit: cover;
-      height: 50vmin;
-      width: 50vmin;
-      margin: 0.5rem;
+      height: 33vw;
+      width: 33vw;
+      // margin: 0.5rem;
     }
   }
 

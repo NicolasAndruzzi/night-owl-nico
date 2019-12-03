@@ -1,11 +1,11 @@
 <header>
-  <div>
-    <span>
+  <div class="logo-container">
+    <div class="name">
       <span>N</span>
       <span>i</span>
       <span>c</span>
       <span>o</span>
-    </span>
+    </div>
     <!-- ============Hidden Video For Favicon============ -->
     <!-- use @HostListener for oncanplay and onloadedmetadata? -->
     <!-- Was @HostListener not working with oncanplay and onloadedmetadata
@@ -23,6 +23,7 @@
         src="assets/NASA-Lunar-Reconnaissance-Orbiter/lunar-libration-frame-123-till-838-720p.webm"
         type="video/webm"
       />
+      <!-- Is it possible to encode a mp4 with an alpha channel using ffmpeg? -->
       <!-- <source
           src="assets/NASA-Lunar-Reconnaissance-Orbiter/lunar-libration.mp4"
           type="video/mp4"
@@ -32,7 +33,7 @@
       <!-- <img src="" alt=""> -->
     </video>
     <!-- ============Hidden Video For Favicon============ -->
-    <span>
+    <div class="name">
       <span>A</span>
       <span>n</span>
       <span>d</span>
@@ -41,7 +42,7 @@
       <span>z</span>
       <span>z</span>
       <span>i</span>
-    </span>
+    </div>
   </div>
   <nav *ngIf="false">
     <ol>

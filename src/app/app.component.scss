@@ -11,14 +11,15 @@
 
 app-header {
   // ON PAGE LOAD:
-  position: fixed;
+  position: absolute;
+  // position: fixed;
   top: 0;
   left: 0;
   right: 0;
   width: 100vw;
   height: 100vh;
   display: flex;
-  // border: 1px solid color(testcolor);
+  border: 1px solid color(testcolor);
   // background-color: orange;
   // AFTER SCROLLING:
   // min-height: 48px;

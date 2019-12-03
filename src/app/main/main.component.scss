@@ -4,15 +4,16 @@ main {
   flex-direction: column;
 
   .hero-section {
-    height: 225vh;
-    display: flex;
+    flex-shrink: 0;
+    display: inline-flex;
     flex-direction: column;
     // border: 1px dotted blue;
   }
 
   .main-section {
+    flex-shrink: 0;
     height: 100vh;
-    display: flex;
+    display: inline-flex;
     // border: 1px dotted green;
   }
 }
