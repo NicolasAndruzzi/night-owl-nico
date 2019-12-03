@@ -4,8 +4,9 @@ main {
   flex-direction: column;
 
   .hero-section {
-    height: 125vh;
+    height: 225vh;
     display: flex;
+    flex-direction: column;
     // border: 1px dotted blue;
   }
 

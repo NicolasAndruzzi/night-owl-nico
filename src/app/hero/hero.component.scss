@@ -1,8 +1,27 @@
-section {
-  flex-grow: 1;
+.nightSky {
+  flex-shrink: 0;
+  display: inline-flex;
   background-color: black;
   background-image: url('../../assets/nightSky.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 125vh;
+}
+
+.cinemagraph {
+  flex: 1 0 auto;
+  display: inline-flex;
+  align-items: flex-start;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 0 15vh 7.5vh black;
+
+  video {
+    object-fit: cover;
+    object-position: center top;
+    width: 100vw;
+    height: 100vh;
+    // border: 1px dotted red;
+  }
 }

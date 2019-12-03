@@ -9,7 +9,6 @@ import { HeroComponent } from './hero/hero.component';
 import { HowComponent } from './how/how.component';
 import { MainComponent } from './main/main.component';
 import { WhatWhenComponent } from './what-when/what-when.component';
-import { WhoWhereComponent } from './who-where/who-where.component';
 import { WhyComponent } from './why/why.component';
 
 @NgModule({
@@ -19,7 +18,6 @@ import { WhyComponent } from './why/why.component';
     FooterComponent,
     MainComponent,
     HeroComponent,
-    WhoWhereComponent,
     WhyComponent,
     HowComponent,
     WhatWhenComponent
