@@ -13,6 +13,7 @@ import Favico from 'favico.js';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit, AfterViewInit {
+  owlFace = '{O,O}';
   constructor() {}
   // =============================================================
   @ViewChild('faviconVideoElementNode', { static: false })

@@ -5,7 +5,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid red;
+  padding: 1.5vw;
+  // border: 1px solid red;
   // background-color: blue;
 
   .logo-container {
@@ -15,29 +16,48 @@ header {
     color: white;
     align-items: center;
     justify-content: space-evenly;
-    border: 1px dotted yellow;
+    // border: 1px dotted yellow;
 
     .name {
       flex-shrink: 0;
       display: inline-flex;
       align-items: center;
-      border: 1px dotted white;
+      // border: 1px dotted white;
 
       span {
         text-align: center;
-        font-size: 13vw;
-        width: 5.5vw;
-        border: 1px dotted purple;
+        font-size: 12vw;
+        width: 5.75vw;
+        // border: 1px dotted purple;
       }
     }
 
     video {
       flex-shrink: 0;
       border-radius: 50%;
-      object-fit: cover;
-      height: 33vw;
-      width: 33vw;
-      // margin: 0.5rem;
+      height: 27vw;
+      width: 27vw;
+      margin: 0.5vw;
+      // border: 1px dotted lightskyblue;
+    }
+
+    .video-overlay {
+      // ===================Size styles copied from video above===================
+      border-radius: 50%;
+      height: 27vw;
+      width: 27vw;
+      // ===================Size styles copied from video above===================
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      // Left = 1.5vw padding + (4 * 5.75vw) letters N-i-c-o + 0.5vw margin
+      left: 25vw;
+      color: color(primary);
+      font-size: 9vw;
+      font-family: 'Permanent Marker', cursive;
+      font-weight: 100;
+      // border: 1px dotted greenyellow;
     }
   }
 
