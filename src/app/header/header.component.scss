@@ -3,9 +3,6 @@
 header {
   flex: 1 0 auto;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.5vw;
   // border: 1px solid red;
   // background-color: blue;
 
@@ -15,20 +12,18 @@ header {
     flex-wrap: wrap;
     color: white;
     align-items: center;
-    justify-content: space-evenly;
+    padding: 1.5vw;
     // border: 1px dotted yellow;
 
     .name {
       flex-shrink: 0;
       display: inline-flex;
       align-items: center;
-      filter: drop-shadow(0 0 5px #000);
+      text-shadow: 0 0 5px #000;
       // border: 1px dotted white;
 
       span {
         text-align: center;
-        font-size: 12vw;
-        width: 5.75vw;
         // border: 1px dotted purple;
       }
     }
@@ -36,30 +31,21 @@ header {
     video {
       flex-shrink: 0;
       border-radius: 50%;
-      height: 27vw;
-      width: 27vw;
       margin: 0.5vw;
       box-shadow: 0 0 2.5vw 1px #000;
       // border: 1px dotted lightskyblue;
     }
 
     .video-overlay {
-      // ===================Size styles copied from video above===================
       border-radius: 50%;
-      height: 27vw;
-      width: 27vw;
-      // ===================Size styles copied from video above===================
       display: inline-flex;
       align-items: center;
       justify-content: center;
       position: absolute;
-      // Left = 1.5vw padding + (4 * 5.75vw) letters N-i-c-o + 0.5vw margin
-      left: 25vw;
       color: color(primary);
-      font-size: 9vw;
       font-family: 'Permanent Marker', cursive;
       font-weight: 100;
-      filter: drop-shadow(0 0 5px #000);
+      text-shadow: 0 0 10vw #000;
       mix-blend-mode: lighten;
       // border: 1px dotted greenyellow;
     }
@@ -96,6 +82,56 @@ header {
 
     button {
       background-color: greenyellow;
+    }
+  }
+}
+
+@media (orientation: landscape) {
+  .logo-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    .name {
+      span {
+        font-size: 12vw;
+        width: 5.75vw;
+      }
+    }
+
+    video {
+      height: 27vw;
+      width: 27vw;
+    }
+    .video-overlay {
+      height: 27vw;
+      width: 27vw;
+      // Left = 1.5vw padding + (4 * 5.75vw) letters N-i-c-o + 0.5vw margin
+      left: 25vw;
+      font-size: 9vw;
+    }
+  }
+}
+
+@media (orientation: portrait) {
+  .logo-container {
+    flex-direction: column;
+    justify-content: center;
+
+    .name {
+      span {
+        font-size: 12vh;
+        width: 12.125vw;
+      }
+    }
+
+    video {
+      height: 27vh;
+      width: 27vh;
+    }
+    .video-overlay {
+      height: 27vh;
+      width: 27vh;
+      font-size: 9vh;
     }
   }
 }
