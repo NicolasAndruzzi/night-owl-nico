@@ -7,6 +7,75 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 150vh;
+
+  .intro {
+    position: absolute;
+    display: flex;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    color: white;
+    text-shadow: 0 0 5px #000;
+  }
+
+  .intro-top {
+    bottom: -50vh;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 400;
+    // font-weight: 700;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: normal;
+    // border: 1px dotted greenyellow;
+    margin-bottom: 0.5vh;
+
+    div {
+      display: inline-flex;
+      flex-wrap: nowrap;
+      border: 1px dotted red;
+    }
+  }
+
+  .text-separator {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    top: 150vh;
+    height: 2vh;
+    margin-top: -1vh;
+    // border: 1px dotted yellow;
+
+    hr {
+      height: 0.25vh;
+      border: 0;
+      // border: 1px dotted red;
+      background: rgb(255, 255, 255);
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 50%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    }
+  }
+
+  .intro-bottom {
+    top: 150vh;
+    font-family: 'Josefin Sans', sans-serif;
+    // font-weight: 100;
+    font-weight: 300;
+    // font-weight: 400;
+    text-align: center;
+    // border: 1px dotted blueviolet;
+    margin-left: 15vw;
+    margin-right: 15vw;
+  }
 }
 
 .cinemagraph {
@@ -17,6 +86,7 @@
   overflow: hidden;
   box-shadow: 0 0 15vh 7.5vh black;
   height: 100vh;
+  // border: 1px dotted blue;
 
   video {
     object-fit: cover;
@@ -24,5 +94,61 @@
     width: 100vw;
     height: 100vh;
     // border: 1px dotted red;
+  }
+}
+
+@media (orientation: landscape) {
+  .night-sky {
+    .intro-top {
+      font-size: 8vw;
+
+      div {
+        margin-right: 1rem;
+        margin-left: 1rem;
+
+        .pre-word {
+          // 2x margin from div above
+          margin-right: 2rem;
+        }
+      }
+    }
+    .text-separator {
+      hr {
+        width: 90vw;
+      }
+    }
+    .intro-bottom {
+      font-size: 2.25vw;
+      line-height: 6.5vh;
+      margin-top: 2vh;
+    }
+  }
+}
+
+@media (orientation: portrait) {
+  .night-sky {
+    .intro-top {
+      font-size: 8vh;
+
+      div {
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+
+        .pre-word {
+          // 2x margin from div above
+          margin-right: 1rem;
+        }
+      }
+    }
+    .text-separator {
+      hr {
+        width: 80vw;
+      }
+    }
+    .intro-bottom {
+      font-size: 2.25vh;
+      line-height: 4vh;
+      margin-top: 1vh;
+    }
   }
 }
