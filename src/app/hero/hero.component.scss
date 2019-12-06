@@ -1,8 +1,5 @@
 .night-sky {
   flex-shrink: 0;
-  display: inline-flex;
-  justify-content: center;
-  align-items: flex-end;
   background-color: black;
   background-image: url('../../assets/nightSky.jpg');
   background-position: center;
@@ -11,7 +8,10 @@
   height: 150vh;
 
   .intro {
-    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: inline-flex;
     z-index: 1;
     color: white;
     text-shadow: 0 0 5px #000;
@@ -26,13 +26,16 @@
     flex-wrap: wrap;
     justify-content: center;
     line-height: normal;
-    border: 1px dotted greenyellow;
+    // 2vh offset from height of .text-separator
+    bottom: 0;
+    margin-bottom: 2vh;
+    // border: 1px dotted greenyellow;
 
     div {
       display: inline-flex;
       flex-wrap: nowrap;
-      margin-right: 1.5vw;
       margin-left: 1.5vw;
+      margin-right: 1.5vw;
       // border: 1px dotted red;
 
       .pre-word {
@@ -70,9 +73,6 @@
   }
 
   .intro-bottom {
-    position: absolute;
-    left: 0;
-    right: 0;
     top: 150vh;
     font-family: 'Josefin Sans', sans-serif;
     // font-weight: 100;
@@ -88,9 +88,7 @@
 .cinemagraph {
   flex-shrink: 0;
   display: inline-flex;
-  align-items: flex-start;
   background-color: white;
-  overflow: hidden;
   box-shadow: 0 0 15vh 7.5vh black;
   height: 100vh;
   // border: 1px dotted blue;
