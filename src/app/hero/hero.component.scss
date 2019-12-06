@@ -19,7 +19,8 @@
   }
 
   .intro-top {
-    bottom: -50vh;
+    // bottom: -50vh;
+    bottom: 0vh;
     font-family: 'Amatic SC', cursive;
     font-weight: 400;
     // font-weight: 700;
@@ -28,7 +29,7 @@
     flex-wrap: wrap;
     justify-content: center;
     line-height: normal;
-    // border: 1px dotted greenyellow;
+    border: 1px dotted greenyellow;
 
     div {
       display: inline-flex;
