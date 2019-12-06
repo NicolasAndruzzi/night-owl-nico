@@ -10,11 +10,12 @@ Extract this package in the root of your web site. If your site is <code>http://
 
 Insert the following code in the `head` section of your pages:
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#005500">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=eEvOzwQBo7">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=eEvOzwQBo7">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=eEvOzwQBo7">
+    <link rel="manifest" href="/site.webmanifest?v=eEvOzwQBo7">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=eEvOzwQBo7" color="#005500">
+    <link rel="shortcut icon" href="/favicon.ico?v=eEvOzwQBo7">
     <meta name="apple-mobile-web-app-title" content="Night Owl Nico">
     <meta name="application-name" content="Night Owl Nico">
     <meta name="msapplication-TileColor" content="#000000">
