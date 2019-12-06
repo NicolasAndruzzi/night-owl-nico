@@ -34,7 +34,14 @@
     div {
       display: inline-flex;
       flex-wrap: nowrap;
+      margin-right: 1.5vw;
+      margin-left: 1.5vw;
       // border: 1px dotted red;
+
+      .pre-word {
+        // 2x margin from div above
+        margin-right: 3vw;
+      }
     }
   }
 
@@ -101,16 +108,6 @@
   .night-sky {
     .intro-top {
       font-size: 8vw;
-
-      div {
-        margin-right: 1rem;
-        margin-left: 1rem;
-
-        .pre-word {
-          // 2x margin from div above
-          margin-right: 2rem;
-        }
-      }
     }
     .text-separator {
       hr {
@@ -129,16 +126,6 @@
   .night-sky {
     .intro-top {
       font-size: 8vh;
-
-      div {
-        margin-right: 0.5rem;
-        margin-left: 0.5rem;
-
-        .pre-word {
-          // 2x margin from div above
-          margin-right: 1rem;
-        }
-      }
     }
     .text-separator {
       hr {
