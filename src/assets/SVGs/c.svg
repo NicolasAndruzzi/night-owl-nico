@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 0.8898682 3.368959"
+   height="3.368959mm"
+   width="0.8898682mm">
+  <defs
+     id="defs2" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-67.511273,-87.42491)"
+     id="layer1">
+    <g
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       id="text835"
+       aria-label="c">
+      <path
+         id="path837"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+         d="m 67.699375,88.719921 -0.01929,0.995977 q 0,0.417201 0.07958,0.598069 0.09164,0.212218 0.233922,0.274918 0.09164,0.041 0.185691,0.041 0.09646,0 0.147106,-0.04341 0.07476,0 0.07476,0.05305 0,0.03858 -0.06752,0.08441 -0.06511,0.04823 -0.120578,0.06994 h -0.163987 q -0.03135,-0.01688 -0.115755,-0.04341 -0.0844,-0.02653 -0.156752,-0.07717 -0.06994,-0.05305 -0.132636,-0.171221 -0.0627,-0.120578 -0.08923,-0.279742 -0.04341,-0.260449 -0.04341,-0.583599 v -0.564307 q 0,-0.658358 0.04823,-0.901926 0.09646,-0.494372 0.262861,-0.624596 0.04341,-0.03376 0.132636,-0.06752 0.09164,-0.03617 0.125402,-0.05547 h 0.197748 q 0.0048,0 0.01206,0.0024 0.0096,0.0024 0.01447,0.0048 0.0048,0 0.01206,0.0024 0.0096,0.0024 0.01206,0.0048 0.0048,0 0.01206,0.0048 0.0072,0.0024 0.0096,0.0048 0.0217,0.0217 0.0217,0.05064 l -0.06511,0.07235 h -0.207395 q -0.101286,0 -0.176044,0.09646 -0.07476,0.09405 -0.115755,0.224276 -0.03859,0.130225 -0.0627,0.301446 -0.03617,0.258038 -0.03617,0.499194 z" />
+    </g>
+  </g>
+</svg>
