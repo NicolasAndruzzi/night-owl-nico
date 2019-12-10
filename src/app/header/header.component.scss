@@ -22,10 +22,14 @@ header {
       font-family: 'Amatic SC', cursive;
       font-weight: 400;
       text-shadow: 0 0 5px #000;
+      margin: 2.5vh 0;
       // border: 1px dotted white;
 
-      span {
-        text-align: center;
+      .letter {
+        // text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         // border: 1px dotted purple;
       }
     }
@@ -94,9 +98,19 @@ header {
     justify-content: space-evenly;
 
     .name {
-      span {
-        font-size: 12vw;
+      .letter {
+        // font-size: 12vw;
         width: 5.75vw;
+
+        svg {
+          &.upper-case {
+            height: 10vw;
+          }
+
+          &.lower-case {
+            height: 8vw;
+          }
+        }
       }
     }
 
@@ -109,7 +123,11 @@ header {
       width: 27vw;
       // Left = 1.5vw padding + (4 * 5.75vw) letters N-i-c-o + 0.5vw margin
       left: 25vw;
-      font-size: 9vw;
+      // font-size: 9vw;
+
+      svg {
+        height: 10vw;
+      }
     }
   }
 }
@@ -120,9 +138,19 @@ header {
     justify-content: center;
 
     .name {
-      span {
-        font-size: 12vh;
+      .letter {
+        // font-size: 12vh;
         width: 12.125vw;
+
+        svg {
+          &.upper-case {
+            height: 10vh;
+          }
+
+          &.lower-case {
+            height: 8vh;
+          }
+        }
       }
     }
 
@@ -133,7 +161,11 @@ header {
     .video-overlay {
       height: 27vh;
       width: 27vh;
-      font-size: 9vh;
+      // font-size: 9vh;
+
+      svg {
+        height: 10vh;
+      }
     }
   }
 }
