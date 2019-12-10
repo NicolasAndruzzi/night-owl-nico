@@ -6,7 +6,10 @@
 // Using CDN for google fonts for now
 // TODO:  Remove unused fonts to improve load time
 // TODO:  Save fonts and serve them myself
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans:300,300i,600,600i&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans:300,300i,600,600i&display=swap');
+
+// Just fonts used in hero section:
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans:300&display=swap');
 
 // font-family: 'Amatic SC', cursive;
 // font-family: 'Josefin Sans', sans-serif;
