@@ -21,7 +21,7 @@ header {
       align-items: center;
       font-family: 'Amatic SC', cursive;
       font-weight: 400;
-      text-shadow: 0 0 5px #000;
+      filter: drop-shadow(0 0 5px #000);
       margin: 2.5vh 0;
       // border: 1px dotted white;
 
@@ -51,7 +51,7 @@ header {
       color: color(primary);
       font-family: 'Permanent Marker', cursive;
       font-weight: 400;
-      text-shadow: 0 0 10vw #000;
+      filter: drop-shadow(0 0 5px #000);
       mix-blend-mode: lighten;
       // border: 1px dotted greenyellow;
     }
